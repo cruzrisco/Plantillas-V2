@@ -1,0 +1,15 @@
+\section{Analysis of the changes}
+This section discusses the difficulties encountered in defining each change using the proposed template.
+%or whether the change fits the template. 
+%according to the template and language patterns defined. Table \ref{tab:changes}. 
+Table \ref{tab:tipos} typifies these problems including the T0 type when the change fits the template.
+\input{Figuras/Fam-TChangesTipo.tex} \input{Figuras/Fam-TChangesMI}
+\input{Figuras/Fam-TChangesALE}
+\input{Figuras/Fam-TChangesVV}
+Table \ref{tab:changesMI} shows the data related to the changes in the replication of the Mindfulness experiment.
+For each change, the acronym of the replication and the base experiment, an identifier and a brief description of the change appear. It also includes the difficulty in describing the change according to the table \ref{tab:tipos}.
+It can be seen that 100\% of the changes fit the template.
+
+Table \ref{tab:changesALE} shows data to changes in the family of Requirements analysis experiments. Of the 33 changes included, only 7 have been defined without problems
+
+Table \ref{tab:changesVV} shows data to changes in the series of experiments on Code evaluation techniques.

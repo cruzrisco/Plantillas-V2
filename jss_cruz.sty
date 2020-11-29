@@ -1,0 +1,192 @@
+% ------------------------------------------------------
+% File    : jss_2015.sty
+% Content : Definitions for the JSS article
+% Date    : 07/10/2015
+% Version : 1.0
+% Authors : A. Durán
+% ------------------------------------------------------
+
+% ------------------------------------------------------
+% Last update: 07/10/2015 (Amador)
+% - Adapted to Elsevier format.
+% ------------------------------------------------------
+% Last update: 02/11/2015-29/11/2015 (Amador)
+% - New title.
+% - Added macro for public speaking, TRWK, CMEX, SEMEX
+%   and lab--pack URL.
+% ------------------------------------------------------
+% Last update: 18/12/2015 (Amador)
+% - Added macro for CM.
+% ------------------------------------------------------
+
+% -----------------
+% Required packages
+% -----------------
+
+%\RequirePackage{graphicx}  					% for including graphics (already in elsarticle)
+\RequirePackage{epstopdf}  					% for including EPS figures
+\RequirePackage{tabularx}  					% better tables
+%\RequirePackage[export]{adjustbox}	% valign in includegraphics
+%\RequirePackage{colortbl}	 					% color for table rows
+\RequirePackage{multirow}           % multirow table cells
+\RequirePackage{xspace}		 					% automatic space after macros
+%\RequirePackage{listings}	 					% Prolog listings
+%\RequirePackage{oz}				 					% Z and Object-Z macros
+\RequirePackage{url}       					% URLs in LaTeX
+%\RequirePackage[normalem]{ulem} 		% stroked text
+%\RequirePackage{courier}   					% Courier font
+\RequirePackage{rotating}						% for rotating figures and tables
+\RequirePackage{amsmath}            % AMS math package
+\RequirePackage{mathptmx}  					% Times New Roman for text and math
+%\RequirePackage{marvosym}           % For the \Letter symbol
+\RequirePackage{todonotes}          % To-do notes
+%\RequirePackage[pdftex]{color}
+%\definecolor{azul}{rgb}{0,0,1}
+
+%% The amssymb package provides various useful mathematical symbols
+%\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+% --------
+% Acronyms
+% --------
+
+\newcommand{\MF}{Mindfulness\xspace}
+\newcommand{\mf}{mindfulness\xspace}
+
+\newcommand{\PS}{Public speaking\xspace}
+\newcommand{\ps}{public speaking\xspace}
+
+\newcommand{\nt}{null treatment\xspace}
+
+\newcommand{\trwk}{TRWK\xspace}
+\newcommand{\cmex}{CMEX\xspace}
+
+\newcommand{\semex}{\textsc{semex}\xspace}
+\newcommand{\semq}{\textsc{sem}\text{$_Q$}\xspace}
+
+\newcommand{\gqm}{GQM\xspace}
+
+\newcommand{\SE}{SE\xspace}
+%\newcommand{\SE}{software engineering\xspace}
+\newcommand{\HFSD}{HFSD\xspace}
+%\newcommand{\HFSD}{human factors in software development\xspace}
+\newcommand{\RE}{RE\xspace}
+%\newcommand{\RE}{requirements engineering\xspace}
+%\newcommand{\cm}{CM\xspace}
+%\newcommand{\CM}{CM\xspace}
+\newcommand{\cm}{conceptual modeling\xspace}
+\newcommand{\CM}{Conceptual modeling\xspace}
+%\newcommand{\CUs}{C\&Us\xspace}
+%\newcommand{\CUs}{customers \& users\xspace}
+\newcommand{\CUs}{customers and users\xspace}
+\newcommand{\IISSI}{ISEIS\xspace}
+%\newcommand{\IISSI}{\textsc{iseis}\xspace}
+%\newcommand{\IISSI}{Introduction to Software Engineering and Information Systems}
+%\newcommand{\ERASMUS}{\textsc{erasmus}\xspace}
+%\newcommand{\EoDP}{\textsc{e{\small o}dp}\xspace}
+\newcommand{\ERASMUS}{Erasmus\xspace}
+\newcommand{\EoDP}{EoDP\xspace}
+%\newcommand{\ANOVA}{\textsc{anova}\xspace}
+\newcommand{\ANOVA}{ANOVA\xspace}
+
+\newcommand{\mbsr}{MBSR\xspace}
+
+\newcommand{\labpackurl}{\url{https://exemplar.us.es/demo/BernardezJSS2016}}
+
+\newcommand{\LSI}{%
+Department of Computer Languages and Systems, University of Seville \\
+E.T.S.I. Informática, Av. Reina Mercedes s/n, 41012, Seville, Spain}
+
+% -----
+% Title
+% -----
+
+\newcommand{\JSSTITLE}{%
+%An Experimental Replication on the Impact of Mindfulness on Requirements Engineering
+%An Experimental Replication on the Impact of the Practice of Mindfulness on the Performance in Conceptual Modeling
+%An Experimental Replication on the Effect of Mindfulness in Conceptual Modeling Performance
+%An Experimental Replication on the Effect of the\\{}Practice of Mindfulness in Conceptual Modeling Performance
+A template for specifiying changes on experimental replications %:  \\ a validation across several research areas.
+}
+%\thanks{\ESEM}
+
+\newcommand{\JSSSUBTITLE}{%
+A replicated experiment to evaluate its effects in conceptual modeling\thanks{\FUNDING}
+%An empirical study to suggest how to encourage software psychology
+%An empirical proposal to encourage software psychology
+%A replicated experiment to evaluate its effects during requirements phase
+}
+
+\newcommand{\SHORTJSSTITLE}{%
+Can mindfulness make software engineers better?
+}
+
+\newcommand{\FUNDING}{%
+This work was partially supported..
+%This work was partially supported by the EU Commission (FEDER), the Spanish and Andalusian R\&D\&I program grants TAPAS (TIN2012--32273), COPAS (P12--TIC--1867) and THEOS (TIC--5906).
+}
+
+\newcommand{\ESEM}{%
+A preliminary version of this work, before the replication of the baseline experiment was carried out, was presented at the 8$^{th}$ International Symposium on Empirical Software Engineering and Measurement (ESEM) that took place in September 18--19, 2014, in Torino, Italy.
+}
+
+% -----------
+% Definitions
+% -----------
+
+%\newcommand{\envelope}{\raisebox{-.5pt}{\scalebox{1.45}{\Letter}}\kern-1.7pt}
+
+\newcommand{\draft}[1]{\textcolor{red}{(\textbf{#1})}}
+%\newcommand{\question}[1]{\mbox{\textcolor{red}{\footnotesize{\textsf{[#1]}}}}}
+
+\newcommand{\inline}[1]{{\small\textsf{#1}}}
+%\newcommand{\inline}[1]{\texttt{#1}}
+
+\definecolor{azul}{rgb}{0,0,1} % para marcar lo de español
+
+\newcommand{\question}[1]{\noindent\textbf{Q}: \emph{#1}}
+\newcommand{\answer}[1]{\noindent\textbf{A}: \emph{#1}}
+
+\newcommand{\USE}{USE\xspace}
+\newcommand{\IRS}{IRS\xspace}
+\newcommand{\EPA}{EPA\xspace}
+\newcommand{\FLT}{FLT\xspace}
+\newcommand{\FLI}{FLI\xspace}
+\newcommand{\LoC}{LoC\xspace}
+\newcommand{\LoHS}{LoHS\xspace}
+\newcommand{\NL}{NL\xspace}
+\newcommand{\DoCLS}{DoCLS\xspace}
+\newcommand{\EoDPO}{EoDP offer\xspace}
+\newcommand{\EoDPAA}{AA\xspace}
+\newcommand{\SC}{SC\xspace}
+\newcommand{\PD}{PD\xspace}
+
+% --------------
+% Configurations
+% --------------
+
+% Para que las filas de las tablas no salgan tan juntas
+\setlength\extrarowheight{2pt}
+
+% Tipo de columna centrada para usar con tabularx
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% Para corregir el título de los apéndices en elsarticle.cls
+\renewcommand\appendix{\par
+  \setcounter{section}{0}%
+  \setcounter{subsection}{0}%
+  \setcounter{equation}{0}
+  \gdef\thefigure{\@Alph\c@section.\arabic{figure}}%
+  \gdef\thetable{\@Alph\c@section.\arabic{table}}%
+  \gdef\thesection{\@Alph\c@section}%
+  \@addtoreset{equation}{section}%
+  \gdef\theequation{\@Alph\c@section.\arabic{equation}}%
+}
+

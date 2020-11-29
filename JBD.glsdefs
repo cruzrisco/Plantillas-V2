@@ -1,0 +1,60 @@
+\ifglsentryexists{ESE}{}%
+{%
+\gls@defglossaryentry{ESE}%
+{%
+name={ISE},%
+sort={ISE},%
+type={acronym},%
+first={Ingenier\IeC {\'\i }a del Software Emp\IeC {\'\i }rica\glsspace (ISE)},%
+firstplural={Ingenier\IeC {\'\i }a del Software Emp\IeC {\'\i }ricas\glsspace (ISEs)},%
+text={ISE},%
+plural={ISEs},%
+description={Ingeniería del Software Empírica},%
+descriptionplural={Ingeniería del Software Empírica\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ingenier\IeC {\'\i }a del Software Emp\IeC {\'\i }rica},%
+longplural={Ingenier\IeC {\'\i }a del Software Emp\IeC {\'\i }ricas},%
+short={ISE},%
+shortplural={ISEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IS}{}%
+{%
+\gls@defglossaryentry{IS}%
+{%
+name={IS},%
+sort={IS},%
+type={acronym},%
+first={Ingenier\IeC {\'\i }a del Software\glsspace (IS)},%
+firstplural={Ingenier\IeC {\'\i }a del Softwares\glsspace (ISs)},%
+text={IS},%
+plural={ISs},%
+description={Ingeniería del Software},%
+descriptionplural={Ingeniería del Software\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ingenier\IeC {\'\i }a del Software},%
+longplural={Ingenier\IeC {\'\i }a del Softwares},%
+short={IS},%
+shortplural={ISs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

@@ -1,0 +1,81 @@
+% ------------------------------------------------------
+% File    : JBD_metamodelo.tex
+% Content : Conclusions of the article for 
+% Date    : 28/2/2018
+% Version : 1.0
+% Authors : 
+% ------------------------------------------------------
+% ------------------------------------------------------
+% Last update: ...// 
+% - Added ..
+% ------------------------------------------------------
+%\textit{ ``E Experiment''} in \textit{``Ch.2 Software requirements''}
+%\gls{SE} ingeniería del software 
+
+%\subsection{Metamodelo}
+%\cite{wiki:Mind} 
+This section presents the metamodel, already proposed in \cite{cruz2018}, on which the template is based (Fig.~\ref{fig:F1}) using UML class diagram notation. %\textcolor[rgb]{1,0,0}{}. 
+
+%+-------------------- Fig.1
+\begin{figure}
+
+%\includegraphics[width=1\textwidth]
+%\includegraphics[width=0.8\textwidth] {Figuras/UML-V3.png}
+%\includegraphics[width=\textwidth] {Figuras/UML-V3.png}
+%\includegraphics[width=\textwidth] {Figuras/UML-V2-P1.png}
+\caption{UML class diagram}
+\label{fig:F1} % Unique label
+\centering
+%\includegraphics[width=0.75\textwidth] {Figuras/UML-V4.png}
+\includegraphics[width=0.8\textwidth] {Figuras/UMLV10.png}
+
+\end{figure}
+ 
+In the metamodel, a replication is a type of empirical study based on another empirical study (either the original or an other replication). The inheritance is partial since objects that are instances of the ``original experiment'' are considered in the supertype.
+%Su tipo es parcial ya que hay otros tipos de estudios empíricos que no aparecen por no ser de interés en el modelo.
+%Among the attributes of the replication class, they appear:
+%\begin{itemize} 
+%\item \textbf {Acronym}. A code or acronym related to the original experiment is used.
+%\item \textbf {\textcolor[rgb]{1,0,0}{Site and Date}}.
+%Site and Date of replication.
+%\item \textbf {Empirical method}. The three main empirical methods are \textit{controlled experiment}, \textit{survey} y \textit{case study}. The empirical method \textit{quasi-experiment}, in which the assignment of subjects to treatment is not random, are included in the \textit{controlled experiments} category following \cite{wohlin:experimentation}. Although less frequent, we also consider two other empirical methods: \textit{pilot study} and \textit{observational study}.
+
+%\item \textbf {Type of replication}.According to who carries out the replications, these are classified as \textit{internal} (they are performed by the original experimenters) and \textit{external} (they are performed by independent experimenters and therefore their power of confirmation is greater than in the internal ones) \cite{brooks1996replication}.
+
+%There are other taxonomies based on various criteria, for example a possible classification according to the degree to which the original experiment procedure is followed. In this regard, there are authors who speak of \textit{exact} and \textit{conceptual} replications \cite{shull2008role},  \textit{closed} and \textit{differentiated}  \cite{1330459,lindsay1993design,juristo2011role}. Basili et al. \cite{basili1999building} refer to \textit{strict} replications and present a classification into three main groups depending on whether or not the research hypothesis is varied or the theory is expanded. In \cite{gomez2014understanding} a classification of the replications in \textit{literal}, \textit{operational} and \textit{conceptual} is proposed depending on the changes carried out and the purpose of the replication. Due to the lack of agreement on the terminology \cite{gomez2014understanding} and the differentiating nuances, we have chosen to describe the changes by classifying the replications as  \textit{internal} or  \textit{external} without entering into other more confusing categories.
+
+%\item \textbf {Purpose}. A enumerated type that can take three possible values has been defined: i) \textit{Confirm results}, to verify the results obtained in previous experiments, ii) \textit{Extend results} includes, among others, changes in the experimenters to analyze if the results are a consequence of the intervention of these experimenters, changes in the population and measures to see if the results are still met or if the hypothesis is still valid, and iii) \textit{Overcome some limitations of the original experiment}, reflects the changes that occur to avoid the propagation of problems detected in the original experiment (kitchenham \cite{kitchenham2008role}). %\textit{Overcoming some limitations of the original experiment}, reflects the changes that occur as a result of the constraints imposed and to which the experiment needs to be adapted.
+%\textcolor[rgb]{1,0,0}{Custom target}. 
+
+%\end{itemize}
+To reflect the relationship between the replication class and the class that describes its \textbf {changes}, a composition has been used since the changes are an intrinsic part of the replication. 
+%Its attributes are: 
+%\begin{itemize} 
+%\item \textbf {Description of the change}. It allows to describe what the change is about.
+
+%\item \textbf {Threat to validity}.  
+%It's a type enumerated with the values: \textit{increases the  construct, external, internal or conclusion validity}. 
+%This attribute serves to indicate how the change introduced mitigates the threat to validity of a given type.
+
+%\item \textbf {Comments}. Additional information about the change. 
+%\end{itemize}
+Gómez \emph{et al.} \cite{gomez2014understanding} define a set of categories for experimental configuration in replications. Each change belongs to one of these categories, called \emph{dimensions}.
+In the class diagram, a hierarchy has been used to classify the configuration elements into the four dimensions. The classification is  \emph{complete} and \emph{without overlap}. The \emph{dimensions} are represented in the metamodel by the subtypes: \textit{Operationalization}, \textit{Population}, \textit{Protocol} and \textit{Stakeholder}.
+\textcolor[rgb]{1,0,0}{identified in  \cite{gomez2014understanding,santos2018analyzing}}
+%\begin{itemize} 
+%\item \textbf {Dimension and elements}. 
+
+%\begin{itemize}
+%\item \textit{Operationalization}: includes changes related to \emph{dependent variables} (changes in metrics and measurement procedures) and \emph{ independent variables} (changes in the way treatment is applied). 
+%It corresponds to the  EC\_Operationalization subtype with the attributes: variable (name of the variable to be modified) and type that can take the values \emph{dependent} or \emph{independent}.
+%\item \textit{Population}: includes changes in the properties of the \emph{experimental subjects} (e.g. different experience, age, etc.) and \emph{objects} (e.g. different programming language, difficulty level, etc.). It corresponds to the  EC\_Population  subtype with the population attribute that can take the values \emph{subjects} or \emph{objects}.
+%\item \textit{Protocol}: includes changes in the \emph{experimental design}, in the \emph{experimental material} (when using different instances of the same type of experimental object, e.g. changing the formulation of one problem to another of equal difficulty), in the \emph{guides} (e.g. change the instructions provided to subjects) and in the \emph{measuring instruments} (e.g. change the questionnaire for data collection). It corresponds to the EC\_Protocol subtype with the instrument attribute that can take the values \emph{experimental design}, \emph{experimental material}, \emph{guides} o \emph{measuring instruments}.
+%\textcolor[rgb]{1,0,0}{order of application}
+%\item \textit{Experimenter}: regarding changes in the roles of experimenters. It corresponds to the EC\_Experimenter subtype with the role attribute that can take the values \emph{designer}, \emph{analyst}, \emph{trainer}, \emph{monitor} o \emph{measurer}.
+
+
+%Las dimensiones operacionalización, población y experimentadores se corresponden con las identificadas en  \cite{gomez2014understanding}. Debido a su importancia, hemos considerado que el elemento diseño experimental está en una dimensión aparte de la dimensión protocolo. 
+%\end{enumerate}
+%\end{itemize}
+%\end{itemize}
+

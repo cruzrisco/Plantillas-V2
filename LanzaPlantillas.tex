@@ -1,0 +1,209 @@
+
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+%\documentclass{llncs}
+\documentclass[runningheads]{llncs}
+\usepackage[utf8]{inputenc} %Codificacion utf-8
+%\usepackage[spanish,activeacute]{babel} %Definir idioma español
+\usepackage[pdftex]{graphicx}
+%\usepackage{paralist}	%Enum
+%\usepackage{enumerate}
+%\usepackage[acronym]{glossaries}  %Acronym
+%\usepackage{jss_cruz}       % other packages and definitions
+\usepackage{xspace} % automatic space after macros
+
+% Para los checkmark uso esto 2 package y luego \ding{51}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+% Para los checkmark uso esto 2 package y luego \ding{51}
+%
+\usepackage{tabularx} % Para tablas
+%\usepackage{makeidx}  % allows for indexgeneration
+%
+\usepackage{color}
+\usepackage[none]{hyphenat} % Nuevo para que no corte las palabras
+\usepackage{hyperref}
+\begin{document}
+\sloppy % Para justificar los párrafos
+%
+%\frontmatter          % for the preliminaries
+%
+%\pagestyle{headings}  % switches on printing of running heads
+%\addtocmark{Hamiltonian Mechanics} % additional mark in the TOC
+
+%\newacronym{ESE}{ISE}{Ingeniería del Software Empírica}
+%newacronym{IS}{IS}{Ingeniería del Software}
+\newcommand{\gls}[1]{#1\xspace}
+
+\vspace{1cm}
+
+%\title{Un Enfoque basado en Plantillas para Especificar Cambios en Replicaciones de Experimentos Controlados de estudios empíricos en Ingeniería del software}
+
+%\title{An empirical review of a Template to Specify Changes in Controlled Experiment Replications}
+%\titlerunning{Validation of a Template}
+%Controlados
+
+%\author{Ivar Ekeland\inst{1}\orcidID{0000-1111-2222-3333} \and
+%Roger Temam\inst{2}\orcidID{1111-2222-3333-4444} \and
+%Jeffrey~Dean\orcidID{2222-3333-4444-5555}}
+ %José A. Galindo \and  Antonio Ruiz–Cort\'{e}s
+%\author{Margarita Cruz\orcidID{0000-0001-8334-6039} \and         Beatriz Bernárdez\orcidID{0000-0002-9390-3772} \and        Amador Durán\orcidID{0000-0003-3630-5511} \and  Antonio Ruiz–Cortés\orcidID{0000-0001-9827-1834}}
+
+%\authorrunning{M. Cruz et al.}
+%\author{Margarita Cruz,         Beatriz Bernárdez,         Amador Durán, José Antonio Parejo \and  Antonio Ruiz–Cortés}
+%
+
+%\institute{Dept. Lenguajes y Sistemas Informáticos, University of Seville, Seville, Spain.\\
+%\institute{Dept. Lenguajes y Sistemas Informáticos, University of Seville, \\  Avda. Reina Mercedes s/n, 41012, Seville, Spain.\\
+%\email{I.Ekeland@princeton.edu}}
+ %  \email{I.Ekeland@princeton.edu}}
+ %\email{ \{cruz,beat,amador,japarejo,aruiz\}@us.es}   }      
+
+%\maketitle              % typeset the title of the contribution
+
+%\begin{abstract} % \gls{ny} sera  \gls{ny}  y  \gls{ESE} sera  \gls{ESE} 
+%\emph{Context}: The replication of empirical studies in Software Engineering is necessary to consolidate the acquired knowledge.
+%To demonstrate the validity of a empirical study in Software Engineering it is necessary to replicate it in different contexts and conditions.
+%Nevertheless, in order to facilitate successive replications, to improve the understanding of replications and to increase the knowledge generated, the information should be published in a way that allows a \textcolor[rgb]{1,0,0}{deep understandng} of the study.
+%\emph{Objective}: When designing a replication, the need to make changes to the original study setup arises. In order to represent the relevant information about each change a metamodel and a template were developed. \textcolor[rgb]{1,0,0}{The template is based on the metamodel which formalizes the information involved in the replications}. The goal of the present work is to evaluate both metamodel and template. \emph{Method}: The template has been applied to specify the changes introduced in 14 replications that compound 3 families of experiments.
+%\emph{Results}: Using the template, we have been able to specify the 59 changes defined in these replications. \textcolor[rgb]{1,0,0}{When analyzing the results, we found that} 13 of them lead us to make modifications in the template and in the way of specifying the detailed information of the change. This implies modifications in some nuances of the metamodel. %With the feedback obtained, the metamodel and the template have been improved by introducing new information and specifying with more details. 
+%The improved template might allow changes be defined systematically and documented homogeneously.
+%\emph{Potential audience}: experimenters and researchers in Software Engineering. \emph{Added value}: \textcolor[rgb]{1,0,0}{The proposed template allows the systematic definition of changes, facilitating their specification and avoiding the loss of relevant information}.
+%Sistematizar la concepción de los cambios y la manera de documentarlos facilita su comprensión para otros investigadores
+ %y que se pueda aplicar en el ámbito general de la Ingeniería del Software experimental y en otras áreas empíricas. \emph{feedback} necesario para su validació
+%76 words El patrón se ha validado en la replicación de un experimento llevado a cabo por parte de los autores del presente estudio.
+%\keywords{Replication, Template, Linguistic Patterns, Empirical Study, Empirical Software Engineering}
+%\keywords{Empirical software engineering \and Replication \and Template \and  Linguistic patterns.}
+%\end{abstract}
+
+% 1. Introduction
+%\section{Introduction}
+\label{sec:intro}
+%\input{Fam-Intro}
+
+% 2. DSR
+%\section{Research Method Used}
+%\label{sec:DSR}
+%\input{DSR1.tex}
+
+%% 2. Revisión artículos sobre replicaciones
+%\section{Revisión de artículos sobre replicaciones}
+%\label{sec:revision}
+%\input{JBD-revision}
+%%
+% 3. Metamodelo
+%\section{Metamodel about replications and changes}
+\label{sec:metamodelo}
+%\input{Fam-metamodelo}
+
+% 4. Plantilla
+%\section{Template for specify changes in replications}
+\label{sec:plantilla}
+%\input{Fam-Plantilla}
+
+% 5. Aplica 
+%\section{Application of the template to changes in three families of experiments}
+\label{sec:aplica}
+%\input{Fam-Aplica}
+%
+% 6. Analiza
+%\section{Analysis of the changes}
+%\label{sec:analiza}
+%\input{Fam-Analiza}
+
+% 7. Trabajos
+%\section{Related work}
+\label{sec:trabajos}
+%\input{Fam-trabajosNew.tex}
+
+%8. Conclusiones
+%\section{Conclusions and Future work}
+\label{sec:conclusions}
+%\input{Fam-Conclusion}
+
+%\section*{Acknowledgements}
+%\input{Fam-trabajos}
+
+%\section*{Appendix A. instantiation of the template}
+%\label{sec:Instancia}
+%\input{Figuras/Fam1-Mind}
+
+\input{Carmen2018}
+\input{Carmen2018-2}
+\input{Carmen2019}
+\input{Carmen2019-2}
+\newpage
+
+\input{Edi-V.tex}
+\input{Edi-P.tex}
+%\input{Edi2-V.tex}
+
+\newpage
+\input{Arantxa.tex}
+\input{Arantxa-2.tex}
+%\input{Arantxa2.tex}
+
+\newpage
+\input{Rocio.tex}
+
+\newpage
+\input{JAP-LP2.tex}
+
+\newpage
+\input{JAP-Exp2.tex}
+\input{JAP-Exp3.tex}
+\input{JAP-Exp4.tex}
+
+
+\newpage
+\input{Mind2}
+\input{Mind3}
+%\input{Figuras/ORT.tex}
+\input{Q-2009.tex}
+%\input{Figuras/Fam2-Plan2009.tex}
+%\input{Figuras/Fam2-Plan2011.tex}
+\input{Q-2011.tex}
+\input{Q-2012.tex}
+\input{E-2012A.tex}
+\input{E-2012A-bis.tex}
+%\input{Figuras/Fam2-Plan2012.tex}
+%\input{Figuras/Fam2-Plan2012A.tex}
+%\input{Figuras/Fam2-Plan2012A-bis.tex}
+%\input{Figuras/Fam2-Plan2012B.tex}
+\input{E-2012B.tex}
+\input{E-2013.tex}
+\input{E-2014.tex}
+\input{E-2015.tex}
+%\input{Figuras/Fam2-Plan2013.tex}
+%\input{Figuras/Fam2-Plan2014.tex}
+%\input{Figuras/Fam2-Plan2015.tex}
+
+%\input{Figuras/Fam3-UPM.tex}
+\input{F3-UPM.tex}
+\input{F3-UPV.tex}
+\input{F3-UDS.tex}
+\input{F3-ORT.tex}
+
+%\input{Figuras/Fam3-UPM-bis.tex}
+%\input{Figuras/Fam3-UPV.tex}
+%\input{Figuras/Fam3-UPV-bis.tex}
+%\input{Figuras/Fam3-Uds.tex}
+%\input{Figuras/Fam3-ORT.tex}
+%\input{Figuras/Fam3-ORT-Eng.tex}
+%
+
+% ---- Bibliography ----
+%
+%\clearpage
+\bibliographystyle{plain}%spbasic
+%\renewcommand{\refname}{Referencias}
+%\bibliography{Biblio-V2} 
+%\newpage
+
+
+%
+% second contribution with nearly identical text,
+\end{document}

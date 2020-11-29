@@ -1,0 +1,74 @@
+% ------------------------------------------------------
+% File    : JBD-plantillas.tex
+% Content : Platilla propuesta
+% Date    : Enero/2018
+% Version : 1.0
+% Authors : 
+% ------------------------------------------------------
+% ------------------------------------------------------
+% Last update: ...// 
+% - Added ..
+% ------------------------------------------------------
+%\gls{SE} acuerdos a nivel de servicio \cite{ruiz2005improving},%\textit{ ``E Experiment''}
+This section summarises the template to define the specification of replication changes already proposed in \cite{cruz2018} \textcolor[rgb]{1,0,0}{artículo JisBD}. 
+
+In the notation used to describe the L-patterns, words or phrases between \textless \hspace{0.5 mm} and \textgreater \hspace{1 mm} must be properly replaced, words or phrases between \{ and \} and separated by \textbar \hspace{1 mm} represents options; only one option must be chosen and words between [ and ]  are optional, that is, they may or may not appear when the template is instantiated. Filling the blanks in pre–written sentences, i.e. L–patterns, is easier and faster than writing a whole paragraph. 
+%\input{Figuras/Fam-Tplantilla.tex}
+\input{Figuras/Fam-TplantillaV2.tex}
+
+ The template has two parts, a general part for replication and a specific part for each of the changes included in the replication. Table \ref{tab:plantilla-V1} shows the proposed template. The meaning of the fields is as follows:
+\begin{itemize}
+\item \textbf {Acronym for Replication}: In order to obtain a quick identification of the different experiments of a family, it is useful that the description of the set of replications of the same experiment begins with a code or acronym relative to the reference experiment and followed by a sequential number. 
+\item \textbf {Acronym of experiment}: The acronym for experiment and replication is the same. The experiment to which the replication refers can be either an original experiment or a previous replication. When the reference experiment is the original experiment, the sequential number following it should be 1, so that it can be easily identified when the reference experiment is already a replication.
+
+
+%\item \textbf {Environment}: Site and date of replication.
+%\item \textbf {Empirical method}: One of the possible values is selected: \textit{controlled experiment}, \textit{survey}, \textit{case study}, \textit{pilot study} and \textit{observational study}.
+
+\item \textbf {Type of replication}: According to who carries out the replications, these are classified as \textit{internal} (they are performed by the original experimenters) and \textit{external} (they are performed by independent experimenters and therefore their power of confirmation is greater than in the internal ones) \cite{brooks1996replication}.
+
+There are other taxonomies based on different criteria, for example a possible classification according to the degree to which the original experiment procedure is followed. In this regard, there are authors who speak of \textit{exact} and \textit{conceptual} replications \cite{shull2008role},  \textit{closed} and \textit{differentiated}  \cite{1330459,lindsay1993design,juristo2011role}. Basili et al. \cite{basili1999building} refer to \textit{strict} replications and present a classification into three main groups depending on whether or not the research hypothesis is varied or the theory is expanded. In \cite{gomez2014understanding} a classification of the replications in \textit{literal}, \textit{operational} and \textit{conceptual} is proposed depending on the changes carried out and the purpose of the replication. Due to the lack of agreement on the terminology \cite{gomez2014understanding} and the differentiating nuances, we have chosen to describe the changes by classifying the replications as  \textit{internal} or  \textit{external} without entering into other more confusing categories. 
+
+Understanding the changes, i.e. if the changes are clearly described, it is not necessary to label the replication in any of these categories. 
+
+\item \textbf {Purpose}: Allows you to select between three possible values: i) \textit{Confirm results}, to verify the results obtained in previous experiments; ii) \textit{Extend results} includes, among others, changes in the experimenters to analyze if the results are a consequence of the intervention of these experimenters, changes in the population and measures to see if the results are still met or if the hypothesis is still valid; and iii) \textit{Overcome some limitations of the original experiment} reflects the changes that occur to avoid the propagation of problems detected in the original experiment (kitchenham \cite{kitchenham2008role}).  %or \textit{Custom target}. 
+ \end{itemize}
+ 
+Each replication incorporates one or more \textbf{changes}:
+\begin{itemize}
+\item \textbf {Description of the change}: The changes are numbered sequentially and their description consists of a L-pattern that must be completed.  In order to correctly specify each change, the \textit{original situation} in the baseline experiment is shown, \textit{new situation} in replication is defined and finally the \textit{cause or consequence} are recorded.  In this last part of the pattern, you can choose between ``\textit{in order to}'' or ``\textit{because of}'' to complete the sentence.
+\textcolor[rgb]{1,0,0}{Tiene que cuadrar con lo dicho en la intro (evitar propagar, adaptar y generalizar)}
+\item \textbf {Modified dimension and elements}: The L-pattern is completed by choosing one of the identified dimensions \cite{gomez2014understanding,santos2018analyzing}. Within the selected dimension, you can specify the modified element by choosing one of the options presented. 
+%\textcolor[rgb]{1,0,0}{Suprimir si se deja el metamodelo}. 
+%%%
+
+The proposed dimensions and elements are:
+\begin{itemize}
+\item \textit{Operationalization}: includes changes related to \emph{dependent variables} (changes in metrics and measurement procedures) and \emph{ independent variables} (changes in the way treatment is applied). 
+
+\item \textit{Population}: includes changes in the properties of the \emph{experimental subjects} (e.g. different experience, age, etc.) and \emph{objects} (e.g. different programming language, difficulty level, etc.). \textcolor[rgb]{1,0,0}{In \cite{santos2018analyzing} only includes changes in experimental subjects}
+\item \textit{Protocol}: Includes changes in the \emph{experimental design}, in the \emph{experimental material} (when using different instances of the same type of experimental object, e.g. changing the formulation of one problem to another of equal difficulty), in the \emph{guides} (e.g. change the instructions provided to subjects) and in the \emph{measuring instruments} (e.g. change the questionnaire for data collection). The experimental protocol is the set up of these elements to observe the effects of treatments \cite{Juristo2012}.
+%\textcolor[rgb]{1,0,0}{order of application}
+\item \textit{Stakeholder}: regarding changes in the roles of experimenters. It can take the values \emph{designer}, \emph{analyst}, \emph{trainer}, \emph{monitor} o \emph{measurer}.
+
+
+%Las dimensiones operacionalización, población y experimentadores se corresponden con las identificadas en  \cite{gomez2014understanding}. Debido a su importancia, hemos considerado que el elemento diseño experimental está en una dimensión aparte de la dimensión protocolo. 
+%\end{enumerate}
+\end{itemize}
+%%%
+\textcolor[rgb]{1,0,0}{Quitar?}.  Both the dimension and the element concerned are optional. 
+In other words, for simplicity's sake, it is possible to describe a change without having to identify the dimension and the element affected by the change.
+%One of the threats  is chosen:
+\item \textbf {Threat to validity addressed}: Allows you to select between \textit{the construct}, \textit{external}, \textit{internal} or \textit{conclusion} validity \cite{wohlin:experimentation}.
+\item \textbf {Comments}: Additional information about the change that could be of interest to the reader.
+
+ \end{itemize}
+ 
+
+
+
+
+
+
+ 
+
