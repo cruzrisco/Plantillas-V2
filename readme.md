@@ -1,6 +1,7 @@
 Dear LLNCS user,
+<p>
 <img width="166" height="67" alt="caesar1" src="https://github.com/user-attachments/assets/f6f57d25-8ed2-44f6-b6dc-7e58cf1f25fb" />
-
+</p>
 
 
 Titulo
