@@ -1,7 +1,8 @@
 Dear LLNCS user,
 
 
-<img width="791" height="252" alt="image" src="https://github.com/cruzrisco/Plantillas-V2/blob/main/Imagenes/Im1.png" />
+<img width="791<img width="302" height="245" alt="cabecera" src="https://github.com/user-attachments/assets/5aae9533-697a-42bc-8b35-f52e323906e6" />
+" height="252" alt="image" src="https://github.com/cruzrisco/Plantillas-V2/blob/main/Imagenes/Im1.png" />
 
 
 The files in this directory belong to the LaTeX2e package for
