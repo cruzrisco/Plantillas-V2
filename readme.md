@@ -1,6 +1,8 @@
 Dear LLNCS user,
 
-https://raw.githubusercontent.com/cruzrisco/Plantillas-V2/main/Imagenes/Im1.png
+
+<img width="791" height="252" alt="image" src="https://github.com/user-attachments/assets/964c2b41-98c3-4b54-9119-ab0df2862e2e" />
+
 
 The files in this directory belong to the LaTeX2e package for
 Lecture Notes in Computer Science (LNCS) of Springer-Verlag.
