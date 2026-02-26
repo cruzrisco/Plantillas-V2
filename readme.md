@@ -1,7 +1,7 @@
 Dear LLNCS user,
 
 
-<img width="791" height="252" alt="image" src="https://github.com/user-attachments/assets/964c2b41-98c3-4b54-9119-ab0df2862e2e" />
+<img width="791" height="252" alt="image" src="https://github.com/cruzrisco/Plantillas-V2/blob/main/Imagenes/Im1.png" />
 
 
 The files in this directory belong to the LaTeX2e package for
